@@ -1,0 +1,15 @@
+iclc;
+clear;
+l=3.5*(10^(-5));
+vsc=5.1*(10^(-9));
+vop=165*(10^(-6));
+alpha_sc=(4.343/1)*(vsc/vop);
+disp('db/km',alpha_sc,'scattering loss(alpha_sc)=');
+L1=1;
+L2=0.002;
+V2=22;
+V1=5.20;
+alpha_T=(1/(L1-L2))*(10*log10(V2/V1));
+disp('db/km',alpha-T,'Total attenuation (alpha_T)=');
+AL=alpha_T_alpha_SC;
+disp('db/km',AL,'Absorption Loss=');
